@@ -1,4 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: red;
+    background-color: pink;
 }
+
+.supertop{
+    width: 100%;
+    height: 4.375rem;
+    background-color: lightgreen;
+    display: flex;  
+}
+
+
+/* col sx */
+
+.col-sx{
+    width: 9.375rem;
+    height: calc(100vh -  4.375rem );
+    background-color: beige;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
