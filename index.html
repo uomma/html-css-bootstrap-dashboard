@@ -28,10 +28,26 @@
     <header>
         <!--     navbar con search e font awsomwe -->
         <navbar>
-            <div class="container-fluid supertop">
-                <div class="logo">logo</div>
-                <div class="search">search</div>
-                <div class="icons">icons</div>
+            <div class="container-fluid supertop d-flex align-items-center">
+                <div class="logo col- text-start">
+                    <img src="img/logo.svg" class="img-fluid " alt="">
+                </div>
+                <div class="search col-10 p-3">
+                    <div class="input-group  ">
+                        <span class="input-group-text" id="basic-addon1"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control" placeholder="Prova-a-cercare: lezioni di chitarra"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="icons col-auto text-end">
+                    <ul class="list-unstyled list-inline mt-3">
+                        <li class="list-inline-item "><i class="fa-solid fa-list d-none d-lg-block"></i></li>
+                        <li class="list-inline-item"><i class="fa-solid fa-circle-question d-none d-lg-block "></i></li>
+                        <li class="list-inline-item"><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i></li>
+                        <li class="list-inline-item"><i class="fa-solid fa-bell"></i></li>
+                    </ul>
+                </div>
             </div>
         </navbar>
 
@@ -40,30 +56,55 @@
     </header>
     <main>
         <!-- col sx -->
-        <div class="col-base">
-            <div class="col-sx">
-                <div class="container-fluid ">
-                    <div class="home">home</div>
-                    <div class="stats">stats</div>
-                    <div class="signals">signals</div>
+        <div class="col-base d-flex">
+            <div class="col-sx col-1 d-flex flex-column align-items-center">
+                <ul class="list-unstyled ">
+                    <li class="home d-flex"><i class="fa-solid fa-house"></i><span class="d-none d-lg-block ps-2">home</span></li>
+                    <li class="stats d-flex align-items-center"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-block ps-2">stats</span></li>
+                    <li class="signals d-flex align-items-center"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-block ps-2">signals</span></li>
+                </ul>
+                <ul class="mt-auto list-unstyled">
+                    <li class="admin d-flex align-items-center"><i class="fa-solid fa-gear"></i><span class="d-none d-lg-block ps-2">admin</span></li>
+                </ul>
 
-                    <div class="admin"></div>admin
-
-                </div>
 
             </div>
             <!-- col sx -->
 
             <!-- col dx -->
-            <div class="col-dx">
+            <div class="col-dx col-11 ">
 
-                <div class=" container-fluid intestazione">125</div>
-                <div class="container-fluid core">core</div>
+                <div class=" container-fluid intestazione d-flex">
+                    <div class="title col-6">Boolean</div>
+                    <div class="studenti col-5">studenti</div>
+                    <div class="plus col-1">plus</div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="container-fluid core ">core</div>
 
 
             </div>
             <!-- col dx -->
-
         </div>
 
     </main>

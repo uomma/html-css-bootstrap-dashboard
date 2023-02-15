@@ -10,9 +10,6 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: pink;
 }
-.col-base{
-    display: flex;
-}
 
 
 /* navbar */
@@ -20,7 +17,9 @@ body{
     width: 100%;
     height: 4.375rem;
     background-color: lightgreen;
-    display: flex;  
+}
+.search{
+
 }
 
 /* navbar */
@@ -29,21 +28,22 @@ body{
 /* col sx */
 
 .col-sx{
-    width:10%;
+    padding: 0.625rem ;
     height: calc(100vh -  4.375rem );
     background-color: beige;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    
 }
+
+
+
 
 
 
 /* col dx */
 
 .col-dx{
-    width: 90%;
     overflow-y: auto;
+    
 }
 
 .intestazione{
