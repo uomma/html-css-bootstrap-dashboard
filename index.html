@@ -29,8 +29,9 @@
         <!--     navbar con search e font awsomwe -->
         <navbar>
             <div class="container-fluid supertop d-flex align-items-center">
-                <div class="logo col- text-start">
-                    <img src="img/logo.svg" class="img-fluid " alt="">
+                <div class="logo col-auto text-start">
+                    <img src="img/logo.svg" class="d-none d-lg-block ">
+                    <img src="img/mobile-logo.png" class="d-lg-none  logo-s" alt="">
                 </div>
                 <div class="search col-10 p-3">
                     <div class="input-group  ">
@@ -44,7 +45,8 @@
                     <ul class="list-unstyled list-inline mt-3">
                         <li class="list-inline-item "><i class="fa-solid fa-list d-none d-lg-block"></i></li>
                         <li class="list-inline-item"><i class="fa-solid fa-circle-question d-none d-lg-block "></i></li>
-                        <li class="list-inline-item"><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i></li>
+                        <li class="list-inline-item"><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
+                        </li>
                         <li class="list-inline-item"><i class="fa-solid fa-bell"></i></li>
                     </ul>
                 </div>
@@ -59,12 +61,19 @@
         <div class="col-base d-flex">
             <div class="col-sx col-1 d-flex flex-column align-items-center">
                 <ul class="list-unstyled ">
-                    <li class="home d-flex"><i class="fa-solid fa-house"></i><span class="d-none d-lg-block ps-2">home</span></li>
-                    <li class="stats d-flex align-items-center"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-block ps-2">stats</span></li>
-                    <li class="signals d-flex align-items-center"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-block ps-2">signals</span></li>
+                    <li class="home d-flex"><i class="fa-solid fa-house"></i>
+                        <span class="d-none d-lg-block ps-2">home</span>
+                    </li>
+                    <li class="stats d-flex align-items-center"><i class="fa-solid fa-chart-simple"></i>
+                        <span class="d-none d-lg-block ps-2">stats</span>
+                    </li>
+                    <li class="signals d-flex align-items-center"><i class="fa-solid fa-signal"></i>
+                        <span class="d-none d-lg-block ps-2">signals</span>
+                    </li>
                 </ul>
                 <ul class="mt-auto list-unstyled">
-                    <li class="admin d-flex align-items-center"><i class="fa-solid fa-gear"></i><span class="d-none d-lg-block ps-2">admin</span></li>
+                    <li class="admin d-flex align-items-center"><i class="fa-solid fa-gear"></i><span
+                            class="d-none d-lg-block ps-2">admin</span></li>
                 </ul>
 
 
@@ -74,10 +83,46 @@
             <!-- col dx -->
             <div class="col-dx col-11 ">
 
-                <div class=" container-fluid intestazione d-flex">
-                    <div class="title col-6">Boolean</div>
-                    <div class="studenti col-5">studenti</div>
-                    <div class="plus col-1">plus</div>
+                <div class=" container-fluid intestazione d-flex text-white ">
+                    <div class="title col-6 mt-4">
+                        <div class="d-flex align-items-center  ">
+                            <span class="fs-3  fw-bold pe-3">Boolean</span>
+                            <button type="button" class="badge  rounded-pill btn-secondary ">
+                                piano blaze
+                            </button>
+                        </div>
+                        <div class="boh">
+                            <button type="button" class="badge  rounded-pill btn-secondary">
+                                3 app
+                            </button>
+
+                            <i class="fa-solid fa-chevron-right text-white"></i>
+
+                            <button type="button" class="badge  rounded-pill btn-secondary">
+                                Boolean mobile app
+                            </button>
+                            <button type="button" class="badge  rounded-pill btn-secondary">
+                                Boolean web app
+                            </button>
+                            <button type="button" class="badge  rounded-pill btn-secondary">
+                                Boolean blog app
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                    <div class="studenti col-4  mt-4">
+                        <div class="">Studenti online negli ultimi 30 minuti</div>
+                        <div class="fs-2">125</div>
+                    </div>
+
+                    <div class=" col-2 mt-4">
+                        <div class="new">Nuovo studente<div type="button"
+                                class="badge  ms-3 fs-5 pill btn-secondary plus">+</div>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -100,11 +145,287 @@
 
 
 
-                <div class="container-fluid core ">core</div>
+                <div class="container-fluid core ">
 
+                    <div class="row col-12 d-flex ">
+                        <div class=" hash-sx col-8">
+
+                            <div class="upper  fs-1 ps-3 mt-3 ">
+                                Prossime classi
+
+                            </div>
+                            <div class=" glass ">
+                                <ul class="list-unstyled  col-12 d-flex  align-items-center justify-content-center ">
+                                    <li class="Nome col-7 ps-1">
+                                        Nome
+                                    </li>
+
+                                    <li class="data col-2 fs-6  d-sm-none d-lg-block"> Data Inizio</li>
+                                    <li class="ROI col-1 d-sm-none d-lg-block">ROI</li>
+                                    <li class="Stato col-1">Stato</li>
+                                    <li class="Azioni col-1">Azioni </li>
+
+                                </ul>
+
+                                <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center">
+                                    <li class="Nome col-7">
+                                        <img src="img/class-avatar.jpg" class="img-fluid col-1 p-1" alt=""> classe
+                                        75
+                                    </li>
+                                    <li class="data col-2 fs-6 d-sm-none d-lg-block"> 15 Feb 2023</li>
+                                    <li class="ROI col-1 d-sm-none d-lg-block">20%</li>
+                                    <li class="Stato col-1"><span class="badge text-bg-success">Success</span></li>
+                                    <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i><i
+                                            class="fa-solid fa-trash"></i> </li>
+                                </ul>
+
+                                <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
+
+                                    <li class="Nome col-7">
+                                        <img src="img/class-avatar.jpg" class="img-fluid col-1 p-1" alt=""> classe
+                                        76
+                                    </li>
+
+                                    <li class="data col-2 fs-6 d-sm-none d-lg-block">15 Feb 2023</li>
+                                    <li class="ROI col-1 d-sm-none d-lg-block">20%</li>
+                                    <li class="Stato col-1"><span class="badge text-bg-success">Success</span></li>
+                                    <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i><i
+                                            class="fa-solid fa-trash"></i> </li>
+
+                                </ul>
+                                <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
+
+                                    <li class="Nome col-7">
+                                        <img src="img/class-avatar.jpg" class="img-fluid col-1 p-1" alt=""> classe
+                                        77
+                                    </li>
+
+                                    <li class="data col-2 fs-6 d-sm-none d-lg-block">15 Feb 2023</li>
+                                    <li class="ROI col-1 d-sm-none d-lg-block">20%</li>
+                                    <li class="Stato col-1"><span class="badge text-bg-warning">Process</span>
+                                    </li>
+                                    <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i><i
+                                            class="fa-solid fa-trash"></i> </li>
+
+                                </ul>
+                                <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
+
+                                    <li class="Nome col-7">
+                                        <img src="img/class-avatar.jpg" class="img-fluid col-1 p-1" alt=""> classe
+                                        78
+                                    </li>
+
+                                    <li class="data col-2 fs-6 d-sm-none d-lg-block">15 Feb 2023</li>
+                                    <li class="ROI col-1 d-sm-none d-lg-block">20%</li>
+                                    <li class="Stato col-1"><span class="badge text-bg-success">Success</span></li>
+                                    <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i> <i
+                                            class="fa-solid fa-trash"></i></li>
+
+                                </ul>
+                                <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
+
+                                    <li class="Nome col-7">
+                                        <img src="img/class-avatar.jpg" class="img-fluid col-1 p-1" alt=""> classe
+                                        79
+                                    </li>
+
+                                    <li class="data col-2 fs-6 d-sm-none d-lg-block">15 Feb 2023</li>
+                                    <li class="ROI col-1 d-sm-none d-lg-block">20%</li>
+                                    <li class="Stato col-1"><span class="badge text-bg-danger">Failed</span>
+                                    </li>
+                                    <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i> <i
+                                            class="fa-solid fa-trash"></i></li>
+
+                                </ul>
+                                <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
+
+                                    <li class="Nome col-7">
+                                        <img src="img/class-avatar.jpg" class="img-fluid col-1 p-1" alt=""> classe
+                                        80
+                                    </li>
+
+                                    <li class="data col-2 fs-6 d-sm-none d-lg-block">15 Feb 2023</li>
+                                    <li class="ROI col-1 d-sm-none d-lg-block">20%</li>
+                                    <li class="Stato col-1"><span class="badge text-bg-success">Success</span></li>
+                                    <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i> <i
+                                            class="fa-solid fa-trash"></i></li>
+
+                                </ul>
+                                <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
+
+                                    <li class="Nome col-7">
+                                        <img src="img/class-avatar.jpg" class="img-fluid col-1 p-1" alt=""> classe
+                                        81
+                                    </li>
+
+                                    <li class="data col-2 fs-6 d-sm-none d-lg-block">15 Feb 2023</li>
+                                    <li class="ROI col-1 d-sm-none d-lg-block">20%</li>
+                                    <li class="Stato col-1"><span class="badge text-bg-danger">Failed</span>
+                                    </li>
+                                    <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i><i
+                                            class="fa-solid fa-trash"></i>
+
+                                    </li>
+
+                                </ul>
+                                <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
+
+                                    <li class="Nome col-7">
+                                        <img src="img/class-avatar.jpg" class="img-fluid col-1 p-1" alt=""> classe
+                                        89
+                                    </li>
+
+                                    <li class="data col-2 fs-6 d-sm-none d-lg-block">15 Feb 2023</li>
+                                    <li class="ROI col-1 d-sm-none d-lg-block">20%</li>
+                                    <li class="Stato col-1"><span class="badge text-bg-success">Success</span></li>
+                                    <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i> <i
+                                            class="fa-solid fa-trash"></i></li>
+
+                                </ul>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <div class="upper fs-1 ps-3  ">F.A.Q.
+
+                                        </div>
+
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Come aggiungere un nuovo studente?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>Pagando</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>Pagando</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Posso usare questa dashboard da mobile?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>Pagando</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HASH DX -->
+                        <div class="hash-dx col-4">
+
+                            <ul class="list-group">
+                                <li class="list-group-item upper  fs-1 ps-3 mt-3 py-0">Todo</li>
+                            </ul>
+                            <ul class="list-group px-3 py-3">
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Kickoff nuove classi
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Lezione su BOOTSTRAP classe #89 </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Controllare Username studendi Github </label>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- grafico -->
+                            <div class="px-3 py-3 si mt-4 ">
+
+                                <div class=" graph col-12 mt-4">
+                                    <img src="img/stats.jpeg" class="col-12" alt="">
+
+
+                                    <div class="mt-2 month fs-3">Utenti attivi</div>
+                                    <div class="month">Lista utenti attivi nel ultimo mese</div>
+                                    <hr>
+                                    <div class="month">Genanio:1200</div>
+                                    <hr>
+                                    <div class="month">Febbraio:1500</div>
+                                    <hr>
+                                    <div class="month">Marzo:800</div>
+                                    <hr>
+                                    <div class="month"><a href="#"> Visualizza report completo</a> </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
 
             </div>
-            <!-- col dx -->
+
+
+        </div>
+        <!-- col dx -->
         </div>
 
     </main>

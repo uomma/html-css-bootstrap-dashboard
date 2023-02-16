@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,20 +6,30 @@
 
 /* common */
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    /*     font-family: 'Roboto', sans-serif;
+ */
     background-color: pink;
+}
+
+:root {
+    --bs-success
 }
 
 
 /* navbar */
-.supertop{
+.supertop {
     width: 100%;
     height: 4.375rem;
     background-color: lightgreen;
 }
-.search{
 
+.logo-s {
+    width: 2.5rem;
+}
+
+.fa-bell {
+    color: gold;
 }
 
 /* navbar */
@@ -27,11 +37,11 @@ body{
 
 /* col sx */
 
-.col-sx{
-    padding: 0.625rem ;
-    height: calc(100vh -  4.375rem );
+.col-sx {
+    padding: 0.625rem;
+    height: calc(100vh - 4.375rem);
     background-color: beige;
-    
+
 }
 
 
@@ -41,19 +51,84 @@ body{
 
 /* col dx */
 
-.col-dx{
+.col-dx {
     overflow-y: auto;
-    
+
 }
 
-.intestazione{
-    background-color: lightblue;
+.intestazione {
+    background-color: #1b72e8;
     height: 7.5rem;
 }
 
-.core{
+.btn-secondary {
+    background-color: #165bba;
+    border-style: none;
+}
+
+.btn-secondary:hover {
+    background-color: #134d9d;
+}
+
+.new>.btn-secondary {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.new>.btn-secondary:hover {
+    filter: invert(1);
+    background-color: black;
+}
+
+/* core */
+.core {
     background-color: darkorchid;
-    height:100%;
+    height: 100%;
+}
+
+.upper {
+    height: auto;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid black;
+}
+
+.glass {
+    background-color: aquamarine;
+}
+
+hr {
+    margin: 2px;
+    font-size: larger;
+    color: red;
+}
+
+
+.graph {
+    background-color: white;
+}
+
+.text-bg-danger {
+    background-color: red;
+}
+
+.text-bg-warning {
+    background-color: rgb(220, 220, 37);
+}
+
+.text-bg-success {
+    background-color: green;
+}
+
+.month {
+    padding: 0.9375rem;
 }
 
 /* col dx */
+
+.si{
+    background-color: red;
+}
+
+.px-3 {
+    background-color: #fff;
+}
