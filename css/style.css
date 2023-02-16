@@ -9,7 +9,6 @@
 body {
     /*     font-family: 'Roboto', sans-serif;
  */
-    background-color: pink;
 }
 
 :root {
@@ -21,7 +20,7 @@ body {
 .supertop {
     width: 100%;
     height: 4.375rem;
-    background-color: lightgreen;
+   
 }
 
 .logo-s {
@@ -31,7 +30,10 @@ body {
 .fa-bell {
     color: gold;
 }
-
+.form-control:focus{
+    border-color: none;
+    box-shadow: none;
+}
 /* navbar */
 
 
@@ -40,11 +42,25 @@ body {
 .col-sx {
     padding: 0.625rem;
     height: calc(100vh - 4.375rem);
-    background-color: beige;
+    background-color: #051e34;
+    color: white;
 
 }
+.home:hover{
+    background-color: rgb(255, 253, 253, 0.5);
 
+} 
+.stats:hover{
+    background-color: rgb(255, 253, 253, 0.5);
 
+}
+ .signals:hover{
+    background-color: rgb(255, 253, 253, 0.5);
+
+ }
+ .admin:hover{
+    background-color: rgb(255, 253, 253, 0.5);
+}
 
 
 
@@ -60,7 +76,12 @@ body {
     background-color: #1b72e8;
     height: 7.5rem;
 }
-
+.btn-secondary-bell{
+    background-color: transparent;
+}
+.btn:focus{
+    box-shadow: none ;
+}
 .btn-secondary {
     background-color: #165bba;
     border-style: none;
@@ -82,7 +103,6 @@ body {
 
 /* core */
 .core {
-    background-color: darkorchid;
     height: 100%;
 }
 
@@ -92,14 +112,9 @@ body {
     border-bottom: 1px solid black;
 }
 
-.glass {
-    background-color: aquamarine;
-}
-
 hr {
-    margin: 2px;
-    font-size: larger;
-    color: red;
+    font-size: small;
+    margin-bottom: 1px;
 }
 
 
@@ -121,6 +136,12 @@ hr {
 
 .month {
     padding: 0.9375rem;
+}
+
+.fa-trash, .fa-square-pen{
+    border: 0.0625rem solid black;
+    padding: 0.3125rem;
+    border-radius: 5px;
 }
 
 /* col dx */

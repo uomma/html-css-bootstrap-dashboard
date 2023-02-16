@@ -47,7 +47,16 @@
                         <li class="list-inline-item"><i class="fa-solid fa-circle-question d-none d-lg-block "></i></li>
                         <li class="list-inline-item"><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
                         </li>
-                        <li class="list-inline-item"><i class="fa-solid fa-bell"></i></li>
+                        <li class="list-inline-item">
+                            <button class="btn btn-secondary-bell" type="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -81,6 +90,9 @@
             <!-- col sx -->
 
             <!-- col dx -->
+
+            <!-- TOP PART/ NUOVO STUDENTE -->
+
             <div class="col-dx col-11 ">
 
                 <div class=" container-fluid intestazione d-flex text-white ">
@@ -118,10 +130,24 @@
                     </div>
 
                     <div class=" col-2 mt-4">
-                        <div class="new">Nuovo studente<div type="button"
-                                class="badge  ms-3 fs-5 pill btn-secondary plus">+</div>
-                        </div>
+                        <div class="new">Nuovo studente
 
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                        
+                              
+                              <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                  <div>
+                                    I will not close if you click outside of me.
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
 
                 </div>
@@ -129,6 +155,7 @@
 
 
 
+                <!-- TOP PART/ NUOVO STUDENTE -->
 
 
 
@@ -140,17 +167,16 @@
 
 
 
+                <!-- LARGE DASHBOARD -->
 
 
 
-
-
-                <div class="container-fluid core ">
+                <div class="container-fluid core  ">
 
                     <div class="row col-12 d-flex ">
                         <div class=" hash-sx col-8">
 
-                            <div class="upper  fs-1 ps-3 mt-3 ">
+                            <div class="upper  fs-1 ps-3 mt-3 mb-4 border ">
                                 Prossime classi
 
                             </div>
@@ -178,6 +204,7 @@
                                     <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i><i
                                             class="fa-solid fa-trash"></i> </li>
                                 </ul>
+                                <hr>
 
                                 <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
 
@@ -190,9 +217,11 @@
                                     <li class="ROI col-1 d-sm-none d-lg-block">20%</li>
                                     <li class="Stato col-1"><span class="badge text-bg-success">Success</span></li>
                                     <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i><i
-                                            class="fa-solid fa-trash"></i> </li>
+                                            class="fa-solid fa-trash "></i> </li>
 
                                 </ul>
+                                <hr>
+
                                 <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
 
                                     <li class="Nome col-7">
@@ -205,9 +234,10 @@
                                     <li class="Stato col-1"><span class="badge text-bg-warning">Process</span>
                                     </li>
                                     <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i><i
-                                            class="fa-solid fa-trash"></i> </li>
+                                            class="fa-solid fa-trash "></i> </li>
 
                                 </ul>
+                                <hr>
                                 <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
 
                                     <li class="Nome col-7">
@@ -219,9 +249,10 @@
                                     <li class="ROI col-1 d-sm-none d-lg-block">20%</li>
                                     <li class="Stato col-1"><span class="badge text-bg-success">Success</span></li>
                                     <li class="Azioni col-1"><i class="fa-solid fa-square-pen"></i> <i
-                                            class="fa-solid fa-trash"></i></li>
+                                            class="fa-solid fa-trash        "></i></li>
 
                                 </ul>
+                                <hr>
                                 <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
 
                                     <li class="Nome col-7">
@@ -237,6 +268,8 @@
                                             class="fa-solid fa-trash"></i></li>
 
                                 </ul>
+                                <hr>
+
                                 <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
 
                                     <li class="Nome col-7">
@@ -251,6 +284,8 @@
                                             class="fa-solid fa-trash"></i></li>
 
                                 </ul>
+                                <hr>
+
                                 <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
 
                                     <li class="Nome col-7">
@@ -268,6 +303,8 @@
                                     </li>
 
                                 </ul>
+                                <hr>
+
                                 <ul class="list-unstyled d-flex col-12 align-items-center justify-content-center ">
 
                                     <li class="Nome col-7">
@@ -282,35 +319,14 @@
                                             class="fa-solid fa-trash"></i></li>
 
                                 </ul>
+                                <hr>
+
                             </div>
 
 
+                            <!-- FAQ -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <div>
+                            <div class="mt-4">
                                 <div class="accordion" id="accordionExample">
                                     <div class="accordion-item">
                                         <div class="upper fs-1 ps-3  ">F.A.Q.
@@ -366,12 +382,14 @@
                         </div>
 
                         <!-- HASH DX -->
+
+                        <!-- checkbox -->
                         <div class="hash-dx col-4">
 
                             <ul class="list-group">
                                 <li class="list-group-item upper  fs-1 ps-3 mt-3 py-0">Todo</li>
                             </ul>
-                            <ul class="list-group px-3 py-3">
+                            <ul class="list-group px-3 py-3 border">
                                 <li class="list-group-item">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -397,7 +415,7 @@
                             </ul>
 
                             <!-- grafico -->
-                            <div class="px-3 py-3 si mt-4 ">
+                            <div class="px-3 py-3 border mt-4 ">
 
                                 <div class=" graph col-12 mt-4">
                                     <img src="img/stats.jpeg" class="col-12" alt="">
